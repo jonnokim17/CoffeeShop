@@ -7,19 +7,44 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+
+    @IBOutlet var mapView: MKMapView!
+
+    var locationManager: CLLocationManager?
+    let distanceSpan: Double = 500
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        mapView.delegate = self
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
 
+        if locationManager == nil {
+            locationManager = CLLocationManager()
+
+            locationManager?.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            locationManager?.requestAlwaysAuthorization()
+            locationManager?.distanceFilter = 50
+            locationManager?.startUpdatingLocation()
+        }
+    }
+
+    // MARK: - CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, distanceSpan, distanceSpan)
+        mapView.setRegion(region, animated: true)
+    }
 }
 
