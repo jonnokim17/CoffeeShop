@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9041B2911C0A1A6800B47EA5 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9041B2901C0A1A6800B47EA5 /* CoffeeAPI.swift */; };
+		9041B2931C0A2B0400B47EA5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9041B2921C0A2B0400B47EA5 /* Venue.swift */; };
 		9042725A1C094F2400430E52 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904272591C094F2400430E52 /* MapKit.framework */; };
 		90FB7B511C094AA600687030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB7B501C094AA600687030 /* AppDelegate.swift */; };
 		90FB7B531C094AA600687030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB7B521C094AA600687030 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		05B63B48487E8FABDF06E8F7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6E8C871F30EE26F4BFEE7399 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9041B2901C0A1A6800B47EA5 /* CoffeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
+		9041B2921C0A2B0400B47EA5 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		904272591C094F2400430E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		90FB7B4D1C094AA600687030 /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FB7B501C094AA600687030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				90FB7B501C094AA600687030 /* AppDelegate.swift */,
+				9041B2901C0A1A6800B47EA5 /* CoffeeAPI.swift */,
+				9041B2921C0A2B0400B47EA5 /* Venue.swift */,
 				90FB7B521C094AA600687030 /* ViewController.swift */,
 				90FB7B541C094AA600687030 /* Main.storyboard */,
 				90FB7B571C094AA600687030 /* Assets.xcassets */,
@@ -215,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90FB7B531C094AA600687030 /* ViewController.swift in Sources */,
+				9041B2931C0A2B0400B47EA5 /* Venue.swift in Sources */,
+				9041B2911C0A1A6800B47EA5 /* CoffeeAPI.swift in Sources */,
 				90FB7B511C094AA600687030 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
